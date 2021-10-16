@@ -1,14 +1,16 @@
 {
   "name": "static-site",
   "version": "1.0.0",
-  "description": "",
+  "description": "ReadMe file generator",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node index.js"
   },
-  "author": "",
+  "author": "Julio Rios",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^6.3.1"
+    "inquirer": "^6.5.2"
   }
 }
