@@ -27,9 +27,17 @@ const license = {
     validate: validators.validateLicense
 }
 
+const email = {
+    type: "input",
+    name: "email",
+    message: "Email Address",
+    validate: validators.validateEmail
+};
+
 export const inquiererQuestions = [
     projectTitle,
     description,
     installation,
-    license
+    license,
+    email,
 ];

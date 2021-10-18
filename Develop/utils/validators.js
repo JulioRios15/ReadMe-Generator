@@ -1,4 +1,5 @@
 import licenseCheck from "./license.js";
+import github from './github.js';
 
 const validaNotEmpty = async (input) => {
     const isEmpty = (input === "")? true : false;
@@ -17,7 +18,15 @@ const validateLicense = async (input) => {
     return (bisLicenseValid == true)? true : message;
 }
 
+const validateEmail = async (input) => {
+    const message = "Please enter a valid GitHub email address";
+    const valid = await github.isEmailvalid(input);
+
+    return (valid == true)? true : message;
+}
+
 export default {
     validaNotEmpty,
     validateLicense,
+    validateEmail
 }
