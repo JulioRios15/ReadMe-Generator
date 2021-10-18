@@ -13,7 +13,7 @@ const isLicenseValid = (input) => {
     }
 }
 
-const getErrors = (input) => {
+const getErrorMessage = (input) => {
     const validation = valid(input);
     let message = "";
 
@@ -28,7 +28,7 @@ const getErrors = (input) => {
 
 export default {
     isLicenseValid,
-    getErrors
+    getErrorMessage
 }
 
 

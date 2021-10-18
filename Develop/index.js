@@ -9,10 +9,8 @@ const questions = inquiererQuestions;
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    const formattedFileName = `${fileName}-ReadMe.md`;
     const readMeData = generateMarkdown(data);
-
-    fs.writeFileSync(`${formattedFileName}`, readMeData);
+    fs.writeFileSync(fileName, readMeData);
 }
 
 // TODO: Create a function to initialize app
@@ -20,7 +18,7 @@ async function init() {
 
     await inquirer.prompt(questions)
     .then((data) => {
-        writeToFile(data.name, data);
+        writeToFile("ReadMe.md", data);
     })
     .catch((error) => {
         console.log(error);

@@ -1,22 +1,10 @@
-import licenseCheck from "./license.js";
-
-const userName = {
-    type: "input",
-    name: "name",
-    message: "Whats your name?",
-    validate: async (input) => {
-        if(input === "") {
-            return 'please enter your name'
-        } else{
-            return true;
-        }
-    }
-};
+import validators from "./validators.js";
 
 const projectTitle = {
     type: "input",
     name: "title",
-    message: "Project Name?"
+    message: "Project Name?",
+    validate: validators.validaNotEmpty
 };
 
 const description = {
@@ -36,19 +24,10 @@ const license = {
     name: 'license',
     message: "license",
     default: "ISC",
-    validate: async (input) => {
-        //accepts no license
-        if(input === "") return true;
-
-        const bisLicenseValid = licenseCheck.isLicenseValid(input);
-        const message = licenseCheck.getErrors(input);
-
-        return (bisLicenseValid == true)? true : message;
-    }
+    validate: validators.validateLicense
 }
 
 export const inquiererQuestions = [
-     userName,
     projectTitle,
     description,
     installation,
