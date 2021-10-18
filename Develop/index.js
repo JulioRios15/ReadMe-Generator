@@ -16,15 +16,17 @@ function writeToFile(fileName, data) {
 }
 
 // TODO: Create a function to initialize app
-function init() {
-    inquirer.prompt(questions)
+async function init() {
+
+    await inquirer.prompt(questions)
     .then((data) => {
         writeToFile(data.name, data);
     })
     .catch((error) => {
         console.log(error);
     });
+
 }
 
 // Function call to initialize app
-init();
+await init();

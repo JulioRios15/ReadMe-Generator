@@ -11,6 +11,8 @@
   "author": "Julio Rios",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^6.5.2"
+    "inquirer": "^6.5.2",
+    "license-badger": "^0.19.0",
+    "validate-npm-package-license": "^3.0.4"
   }
 }

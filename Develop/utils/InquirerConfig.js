@@ -1,7 +1,16 @@
+import licenseCheck from "./license.js";
+
 const userName = {
     type: "input",
     name: "name",
-    message: "Whats your name?"
+    message: "Whats your name?",
+    validate: async (input) => {
+        if(input === "") {
+            return 'please enter your name'
+        } else{
+            return true;
+        }
+    }
 };
 
 const projectTitle = {
@@ -27,10 +36,19 @@ const license = {
     name: 'license',
     message: "license",
     default: "ISC",
+    validate: async (input) => {
+        //accepts no license
+        if(input === "") return true;
+
+        const bisLicenseValid = licenseCheck.isLicenseValid(input);
+        const message = licenseCheck.getErrors(input);
+
+        return (bisLicenseValid == true)? true : message;
+    }
 }
 
 export const inquiererQuestions = [
-    userName,
+     userName,
     projectTitle,
     description,
     installation,
