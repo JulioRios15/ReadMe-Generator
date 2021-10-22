@@ -13,7 +13,7 @@ git clone https://github.com/JulioRios15/ReadMe-Generator.git
 
 navigate to the correct directory
 ``` 
-cd develop
+cd ReadMe-Generator/develop
 ```
 
 install node packages
