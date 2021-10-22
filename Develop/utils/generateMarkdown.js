@@ -85,6 +85,7 @@ function generateMarkdown(data) {
   * [license](#license)
   * [contribution](#contribution)
   * [test](#test)
+  * [questions](#questions)
 
   ## Description
   ${data.description}
@@ -97,10 +98,12 @@ function generateMarkdown(data) {
   ${renderLicenseSection(data.license)}
 
   ## Contribution
+  contributions are always welcome!
 
   ## Test
 
-
+  ## Questions
+  [![Github: ${data.username}](https://img.shields.io/badge/GitHub-${data.username}-100000?style=for-the-badge&logo=github&logoColor=white)](http://github.com/${data.username})
 `;
 }
 

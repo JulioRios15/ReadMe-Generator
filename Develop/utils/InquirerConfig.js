@@ -26,6 +26,11 @@ const license = {
     default: "ISC",
     validate: validators.validateLicense
 }
+const username = {
+    type: "input",
+    name: 'username',
+    message: "GitHub username",
+}
 
 const email = {
     type: "input",
@@ -39,5 +44,6 @@ export const inquiererQuestions = [
     description,
     installation,
     license,
+    username,
     email,
 ];

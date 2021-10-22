@@ -1,3 +1,31 @@
-# Professional README Generator Starter Code
+# Professional README Generator
 
-[How to create a Professional README](./readme-guide.md)
+## Description
+A node application that generate a ReadMe.md file to enhance user experience.
+
+## Installation
+
+lets first start by cloning the repository
+
+``` git
+git clone https://github.com/JulioRios15/ReadMe-Generator.git
+```
+
+navigate to the correct directory
+``` 
+cd develop
+```
+
+install node packages
+
+```
+npm install
+```
+
+run the command to start generating the read me file.
+```
+npm run read-me-generator
+```
+
+
+

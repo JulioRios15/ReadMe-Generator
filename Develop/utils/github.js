@@ -1,7 +1,6 @@
 import githubUsername from "github-username";
 
 const isEmailvalid = async (email) => {
-    //if(email === "") return false;
 
     return await githubUsername(email)
     .then(() => {
