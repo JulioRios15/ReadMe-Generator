@@ -1,4 +1,4 @@
-# Tracking App
+# Test App
   ## Table of Content
   * [description](#description)
   * [installation](#installation)
@@ -9,10 +9,10 @@
   * [questions](#questions)
 
   ## Description
-  A simple tracking app that lets you track multiple packages at once.
+  a testing application
 
   ## Installation
-  git clone
+  
   ## Usage
 
   ## License
