@@ -27,6 +27,6 @@ run the command to start generating the read me file.
 npm run read-me-generator
 ```
 ## Demo Video
-[![Watch Demo Video](demo/ProfessionalReadMeGeneratorDemo.mp4)]
+[Watch Demo Video](https://youtu.be/QBcEvzWkJlE)
 
 
